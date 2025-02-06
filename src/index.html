@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Promos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+        :root {
+            --primary-color: #D94E73;
+            --secondary-color: #0442BF;
+            --accent-color: #2450A6;
+            --highlight-color: #F2D16D;
+            --button-color: #F29C50;
+        }
+
+        body {
+            background-color: var(--secondary-color);
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1.5rem 0;
+        }
+
+        .hero {
+            text-align: center;
+            color: white;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero form {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .search-input {
+            width: 50%;
+            padding: 0.75rem;
+            border: 2px solid var(--highlight-color);
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .search-button {
+            background-color: var(--button-color);
+            color: white;
+            font-size: 1rem;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-button:hover {
+            background-color: var(--highlight-color);
+        }
+
+        .illustration {
+            margin: 2rem auto;
+            max-width: 600px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <div class="logo flex items-center">
+                <div class="logo-icon bg-white rounded-full flex items-center justify-center w-12 h-12 text-primary-color font-bold text-xl">P</div>
+                <span class="ml-4 text-2xl font-bold">Pet Promos</span>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 text-white font-semibold">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">Categorias</a></li>
+                    <li><a href="#" class="hover:underline">Sobre Nós</a></li>
+                    <li><a href="#" class="hover:underline">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Encontre os Melhores Produtos para seu Pet!</h1>
+        <p>Compare preços de diversos sites e economize nos melhores itens para o seu amigo de quatro patas.</p>
+        <form>
+            <input type="text" placeholder="Digite o nome do produto..." class="search-input">
+            <button type="submit" class="search-button">Buscar</button>
+        </form>
+        <img src="https://via.placeholder.com/600x300" alt="Ilustração de pets e tecnologia" class="illustration">
+    </section>
+
+    <main class="container mx-auto px-4 py-8">
+        <h2 class="text-center text-white text-3xl font-bold mb-6">Produtos Populares</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <img src="https://via.placeholder.com/150" alt="Produto" class="w-full h-40 object-cover rounded">
+                <h4 class="text-lg font-bold text-gray-800 mt-4">Ração Premium</h4>
+                <p class="text-gray-600">A partir de <span class="text-green-600 font-bold">R$ 89,90</span></p>
+                <a href="#" class="text-primary hover:underline text-sm">Ver preços</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <img src="https://via.placeholder.com/150" alt="Produto" class="w-full h-40 object-cover rounded">
+                <h4 class="text-lg font-bold text-gray-800 mt-4">Casinha para Cachorro</h4>
+                <p class="text-gray-600">A partir de <span class="text-green-600 font-bold">R$ 199,90</span></p>
+                <a href="#" class="text-primary hover:underline text-sm">Ver preços</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <img src="https://via.placeholder.com/150" alt="Produto" class="w-full h-40 object-cover rounded">
+                <h4 class="text-lg font-bold text-gray-800 mt-4">Coleira Anti-Pulgas</h4>
+                <p class="text-gray-600">A partir de <span class="text-green-600 font-bold">R$ 129,90</span></p>
+                <a href="#" class="text-primary hover:underline text-sm">Ver preços</a>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                <img src="https://via.placeholder.com/150" alt="Produto" class="w-full h-40 object-cover rounded">
+                <h4 class="text-lg font-bold text-gray-800 mt-4">Brinquedo Mordedor</h4>
+                <p class="text-gray-600">A partir de <span class="text-green-600 font-bold">R$ 39,90</span></p>
+                <a href="#" class="text-primary hover:underline text-sm">Ver preços</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pet Promos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
